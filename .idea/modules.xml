@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CommonTool/CommonTool.iml" filepath="$PROJECT_DIR$/CommonTool/CommonTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JedisService/JedisService.iml" filepath="$PROJECT_DIR$/JedisService/JedisService.iml" />
     </modules>
   </component>
 </project>
