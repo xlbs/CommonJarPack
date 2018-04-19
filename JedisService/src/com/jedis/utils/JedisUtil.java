@@ -807,13 +807,4 @@ public class JedisUtil {
 		this.jp = jp;
 	}
 
-	public static void main(String[] args) {
-		try {
-			Map<String,String> map = JedisGlobal.getJedisUtil("dataRedis").queryJedisMapAllObj("RpcService");
-			System.out.println(map.toString());
-		} catch (Exception e) {
-			System.out.println("----"+e.getMessage());
-			e.printStackTrace();
-		}
-	}
 }
