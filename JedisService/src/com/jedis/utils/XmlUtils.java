@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.jedis.utils;
 
 import javax.xml.bind.*;
@@ -152,4 +149,6 @@ public class XmlUtils {
 			return new StreamResult(new File(configPath, suggestedFileName));
 		}
 	}
+
+
 }

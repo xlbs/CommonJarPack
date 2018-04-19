@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.tool.utils;
 
 import java.io.File;

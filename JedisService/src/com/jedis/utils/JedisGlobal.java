@@ -11,11 +11,10 @@ import redis.clients.jedis.JedisPoolConfig;
 import java.util.*;
 
 /**
- * 初始化所有内存库连接
- * 
- * @author Administrator
- *
- */
+ * @author xielbs
+ * @create 2018-04-18 9:37
+ * @desc 初始化所有内存库连接
+ **/
 public class JedisGlobal {
 
 	private static Map<String, JedisCluster> jedisClusters = new HashMap<String, JedisCluster>();

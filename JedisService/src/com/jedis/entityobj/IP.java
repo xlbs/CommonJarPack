@@ -5,12 +5,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
-
 /**
- * IP和端口
- * @author xiongyue
- *
- */
+ * @author xielbs
+ * @create 2018-04-18 9:37
+ * @desc IP和端口
+ **/
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "ipport")
 public class IP {

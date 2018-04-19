@@ -5,6 +5,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
+/**
+ * @author xielbs
+ * @create 2018-04-18 9:37
+ * @desc 集群配置参数
+ **/
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "redisClusters")
 public class RedisCluster {

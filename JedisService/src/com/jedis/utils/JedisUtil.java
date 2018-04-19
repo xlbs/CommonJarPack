@@ -12,14 +12,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-
 /**
- * 
- * 功能说明 redis直接操作类
- * @author hgl
- * 时间:2016年11月25日
- *
- */
+ * @author xielbs
+ * @create 2018-04-18 9:37
+ * @desc redis直接操作类
+ **/
 public class JedisUtil {
 	
 	protected JedisPool jp;
@@ -263,7 +260,7 @@ public class JedisUtil {
 	/**
 	 * 插入单个数据到list
 	 * @param objType
-	 * @param list
+	 * @param obj
 	 * @throws Exception
 	 */
 	public void insertObjectToRedisList(String objType, String obj)throws Exception {
@@ -437,7 +434,6 @@ public class JedisUtil {
 	
 	/**
 	 * 删除集合中前realSize个元素
-	 * 
 	 * @param type
 	 * @param realSize
 	 * @throws Exception
@@ -468,9 +464,6 @@ public class JedisUtil {
 	
 	/**
 	 * 删除集合中前realSize个元素
-	 * 
-	 * @param type
-	 * @param realSize
 	 * @throws Exception
 	 */
 	public void deleteRedisAll()throws Exception {
@@ -593,7 +586,7 @@ public class JedisUtil {
 	/**
 	 * 插入set数组
 	 * @param objType
-	 * @param list
+	 * @param str
 	 * @throws Exception
 	 */
 	public void insertSetToRedis(String objType, String... str)throws Exception {
@@ -653,9 +646,7 @@ public class JedisUtil {
 	/**
 	 * 获取set<>列表数据
 	 * @param objType 对象类型
-	 * @param sta 开始数
-	 * @param end 结束数
-	 * @return 
+	 * @return
 	 * @throws Exception
 	 */
 	public Set<String> queryJedisObjSet(String objType)throws Exception {
