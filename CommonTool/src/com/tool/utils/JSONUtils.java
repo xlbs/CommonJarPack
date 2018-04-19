@@ -33,7 +33,7 @@ public class JSONUtils {
 	}
 	
 	/**
-	 * 解析对象成json字符串，属性名大写
+	 * 解析对象成json字符串，属性名首字母大写
 	 * @param obj 对象
 	 * @return
 	 */
@@ -62,7 +62,7 @@ public class JSONUtils {
 	}
 	
 	/**
-	 * 解析json成指定对象类型，属性名大写
+	 * 解析json成指定对象类型，属性名首字母大写
 	 * @param json json字符串
 	 * @param className 对象类型
 	 * @return
@@ -95,7 +95,7 @@ public class JSONUtils {
 	/**
 	 * 解析json
 	 * @param json
-	 * @param t 对象类型转换标示类
+	 * @param t 对象类型转换标示类，属性名首字母大写
 	 * @return
 	 * @throws JSONException
 	 */
@@ -110,46 +110,11 @@ public class JSONUtils {
 
 	/**
 	 * 对象类型转换标示类
-	 * @author Administrator
+	 * @author xlbs
 	 * @param <T> 具体类型
 	 */
 	public static class ObjectToken<T> extends TypeToken<T>{
 		
 	}
 	
-//	public static void main(String[] args){
-//		String json = "{stationIDs=[10, 4, 5, 2]}";
-//		try {
-//			Map<String,List<Integer>> obj = deserialize(json, new ObjectToken<Map<String,List<Integer>>>(){});
-//			System.out.println(obj);
-//			System.out.println(obj.get("stationIDs"));
-//		} catch (JSONException e) {
-//			e.printStackTrace();
-//		}
-//		json = "{s=1,a=2,c=3}";
-//		try {
-//			Map<String,Integer> obj = deserialize(json, new ObjectToken<Map<String,Integer>>(){});
-//			System.out.println(obj);
-//		} catch (JSONException e) {
-//			e.printStackTrace();
-//		}
-//
-//		json = "[1,2,3]";
-//		try {
-//			List<Integer> obj = deserialize(json, new ObjectToken<List<Integer>>(){});
-//			System.out.println(obj);
-//		} catch (JSONException e) {
-//			e.printStackTrace();
-//		}
-//		CCons cons = new CCons();
-//		json = "{ConsId:1,ConsNo:122}";
-//		try {
-//			cons = (CCons) deserializeUpCase(json, CCons.class);
-//			System.out.println(serializeUpase(cons));
-//		} catch (JSONException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//	}
-
 }
